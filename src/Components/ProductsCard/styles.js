@@ -2,8 +2,8 @@ import styled from "styled-components";
 import imageCards from "../../assets/backgroundCards2.png"
 
 export const Card = styled.div`
-    width: 250px;
-    height: 400px;
+    width: 240px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,6 +13,15 @@ export const Card = styled.div`
     background-image: url(${imageCards});
     color: white;
     font-weight: 300;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    :hover{
+        width: 250px;
+        height: 400px;
+    }
+    
 
     img{
         width: 80%;
@@ -23,5 +32,9 @@ export const Card = styled.div`
     span{
         font-weight: 500;
         text-align: center;
+    }
+
+    button{
+        cursor: pointer;
     }
 `

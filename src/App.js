@@ -21,12 +21,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header
-        
-      />
-      <PrincipalCard>
+      <Header/>
+      <PrincipalCard/>
       
-      </PrincipalCard>
     </>
   )
 }

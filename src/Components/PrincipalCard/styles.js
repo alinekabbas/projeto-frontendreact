@@ -16,12 +16,12 @@ background-image: url(${background});
     color: white;
 }
 
-section{
+.products-card-principal{
     width: 90%;
     height: 90%;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 16px;
+    gap: 28px;
 }
 `

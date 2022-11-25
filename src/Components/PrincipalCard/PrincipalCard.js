@@ -2,8 +2,9 @@ import { useState } from "react";
 import { MainCard } from "./styles";
 import { ProductsCard } from "../ProductsCard/ProductsCard";
 import { Filters } from "../Filters/Filters"
-
+import { ShoppingCart } from "../ShoppingCart/ShoppingCart";
 import products from "../../assets/products.json"
+
 
 
 export function PrincipalCard(props) {
@@ -22,7 +23,7 @@ export function PrincipalCard(props) {
     return (
 
         <MainCard>
-                 
+                  
 
             <Filters
                 search={search}
@@ -37,7 +38,7 @@ export function PrincipalCard(props) {
 
             <p className="quantify" >Quantidade de produtos: {quantifyProducts}</p>
 
-            <section>
+            <section className="products-card-principal">
                 {products
                     .filter((product) => {
                         return product.name.toLowerCase().includes(search.toLowerCase())
@@ -83,6 +84,8 @@ export function PrincipalCard(props) {
                     })
                 }
             </section>
+            <ShoppingCart/>
+
         </MainCard>
     )
 }
