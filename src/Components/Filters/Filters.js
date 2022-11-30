@@ -13,12 +13,14 @@ export function Filters(props) {
             </Search>
             <PriceMinMax>
                 <label for="priceMinMax">Preço: </label>
-                <input placeholder="Mínimo"
+                <input 
+                    placeholder="Mínimo"
                     type="number"
                     value={props.minPrice}
                     onChange={(e) => { props.setMinPrice(e.target.value) }}
                 />
-                <input placeholder="Máximo"
+                <input 
+                    placeholder="Máximo"
                     type="number"
                     value={props.maxPrice}
                     onChange={(e) => { props.setMaxPrice(e.target.value) }}
@@ -26,11 +28,12 @@ export function Filters(props) {
             </PriceMinMax>
 
             <span>
-                <label for="order">Ordenar: </label>
+                <label for="order"></label>
                 <select
                     value={props.order}
                     onChange={(e) => { props.setOrder(e.target.value) }}
                 >
+                    <option value={""}>Ordenar por:</option>
                     <option value={"priceMin"}>Menor Preço</option>
                     <option value={"priceMax"}>Maior Preço</option>
                     <option value={"asc"}>A - Z</option>

@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
+
 export const HeaderContainer = styled.header`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 20px;
     width: 100%;
@@ -10,17 +11,19 @@ export const HeaderContainer = styled.header`
     background-color: #000080;
     color: white;
     
-`
-
-export const HeaderUl = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20vw;
-
-    li{
-        text-decoration: none;
-        color: currentColor;  
-    }
+    
     
 `
+
+// export const HeaderUl = styled.ul`
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 20vw;
+
+//     li{
+//         text-decoration: none;
+//         color: currentColor;  
+//     }
+    
+// `
