@@ -9,7 +9,7 @@
     {
         "id": "02",
         "name": "T-shirt Não acredito em humanos - Alien",
-        "price": 49.90,
+        "price": 59.90,
         "feature": "humanos"
     },
 
@@ -37,7 +37,7 @@
     {
         "id": "06",
         "name": "T-shirt Astronauta na lua",
-        "price": 49.90,
+        "price": 59.90,
         "feature": "astronauta"
     },
 
@@ -67,6 +67,13 @@
         "name": "T-shirt Foguete não tem ré",
         "price": 39.90,
         "feature": "foguete"
+    },
+
+    {
+        "id": "11",
+        "name": "T-shirt Cansei, me leva",
+        "price": 49.90,
+        "feature": "cansei"
     }
     
 ]

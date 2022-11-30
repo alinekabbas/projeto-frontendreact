@@ -32,6 +32,7 @@ export const Card = styled.div`
     span{
         font-weight: 500;
         text-align: center;
+        
     }
 
     button{

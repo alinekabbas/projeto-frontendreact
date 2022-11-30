@@ -7,11 +7,11 @@ export function Header(props) {
       <h1>Space Store</h1>
         
 
-      <HeaderUl>
+      {/* <HeaderUl>
         <li>Cadastro</li>
         <li>Login</li>
         <li>Carrinho</li>
-      </HeaderUl>
+      </HeaderUl> */}
     </HeaderContainer>
   )
 }

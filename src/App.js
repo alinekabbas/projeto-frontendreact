@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { createGlobalStyle } from 'styled-components';
 import { Header } from "./Components/Header/Header";
 import { PrincipalCard } from "./Components/PrincipalCard/PrincipalCard";
-import { ProductsCard } from "./Components/ProductsCard/ProductsCard";
+import {Footer} from "./Components/Footer/Footer"
 
-import products from "../src/assets/products.json"
+//import { ProductsCard } from "./Components/ProductsCard/ProductsCard";
+
+//import products from "../src/assets/products.json"
 
 
 const GlobalStyle = createGlobalStyle`
@@ -23,7 +25,7 @@ function App() {
       <GlobalStyle />
       <Header/>
       <PrincipalCard/>
-      
+      <Footer/>
     </>
   )
 }
