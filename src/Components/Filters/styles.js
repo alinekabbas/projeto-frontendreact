@@ -4,7 +4,7 @@ import background from "../../assets/background.png"
 export const FiltersContainer = styled.div`
     width: 100%;
     height: 10vh;
-    padding: 20px 10px;
+    padding: 30px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,12 +28,17 @@ export const PriceMinMax = styled.div`
     display: flex;
     align-items: center;
     height: 5vh;
+    width: 30vw;
     
+    label{
+        margin-right: 4px;
+    }
     input{
         height: 5vh;
         border: 1px solid white;
         background-image: url(${background});
         color: white;
+        padding: 0 4px;
     }
 `
 
@@ -48,6 +53,8 @@ export const Search = styled.div`
         border: 1px solid white;
         background-image: url(${background});
         color: white;
+        padding: 0 4px;
+        border: 2px solid white;
     }
 
 `

@@ -6,7 +6,7 @@ export const MainCard = styled.main`
 width: 100%;
 min-height: 100vh;
 height: 100%;
-padding-bottom: 16px;
+padding: 40px 0;
 display: flex;
 justify-content: center;
 //align-items: center;
@@ -22,12 +22,7 @@ background-image: url(${background});
     gap: 28px;
 }
 `
-export const Quantify = styled.p`
-    text-align: center ;
-    padding: 20px;
-    color: white;
-    background-image: url(${background});
-`
+
 export const Buying = styled.div`
     color: white;
     display: flex;

@@ -3,14 +3,43 @@ import styled from "styled-components"
 
 export const HeaderContainer = styled.header`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     background-color: #000080;
     color: white;
-    
+    margin-right: 0 auto;
+
+    button{
+        border: none;
+        align-items: center;
+        justify-content: center;
+        background-color: #000080;
+        width: 50px;
+        height: 50px;
+
+        :hover {
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        :active {
+            filter: brightness(0.95);
+        }
+       
+    }
+
+    h1:hover{
+        cursor: pointer;
+        filter: brightness(1.1);
+
+        :active {
+        filter: brightness(0.7);
+        }
+
+    }
     
     
 `
