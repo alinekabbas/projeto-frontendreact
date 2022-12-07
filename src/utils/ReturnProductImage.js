@@ -1,14 +1,14 @@
-import bitoca from "../assets/tshirtBitocas.png";
-import humanos from "../assets/tshirtNaoAcreditoEmHumanos.png";
-import mundo from "../assets/tshirtMinhaMenteDeOutroMundo.png";
-import resgatado from "../assets/tshirtResgatado.png";
-import certezas from "../assets/tshirtTresCertezasDaVida.png";
-import astronauta from "../assets/tshirtAstronautaNaLua.png";
-import humanos2 from "../assets/tshirtNaoAcreditoEmHumanos2.png";
-import infinito from "../assets/tshirtAoInfinitoAlem.png";
-import espaco from "../assets/tshirtPrecisoDeMaisEspaço.png";
-import foguete from "../assets/tshirtFogueteNaoTemRe.png";
-import cansei from "../assets/tshirtCanseiMeLeva.png"
+import bitoca from "../assets/productsImages/tshirtBitocas.png";
+import humanos from "../assets/productsImages/tshirtNaoAcreditoEmHumanos.png";
+import mundo from "../assets/productsImages/tshirtMinhaMenteDeOutroMundo.png";
+import resgatado from "../assets/productsImages/tshirtResgatado.png";
+import certezas from "../assets/productsImages/tshirtTresCertezasDaVida.png";
+import astronauta from "../assets/productsImages/tshirtAstronautaNaLua.png";
+import humanos2 from "../assets/productsImages/tshirtNaoAcreditoEmHumanos2.png";
+import infinito from "../assets/productsImages/tshirtAoInfinitoAlem.png";
+import espaco from "../assets/productsImages/tshirtPrecisoDeMaisEspaço.png";
+import foguete from "../assets/productsImages/tshirtFogueteNaoTemRe.png";
+import cansei from "../assets/productsImages/tshirtCanseiMeLeva.png"
 
 export const getFeature = (feature) => {
     switch (feature) {

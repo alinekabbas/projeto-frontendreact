@@ -1,32 +1,25 @@
 import { useState } from "react";
-import { MainCard, Quantify, Buying } from "./styles";
-import { ProductsCard } from "../ProductsCard/ProductsCard";
-import { Filters } from "../Filters/Filters"
-import { ShoppingCart } from "../ShoppingCart/ShoppingCart";
+import { MainCard, Buying } from "./styles";
+import { ProductsCard } from "../../Components/ProductsCard/ProductsCard";
+import { Filters } from "../../Components/Filters/Filters"
 import products from "../../assets/products.json"
 
 
-
 export function PrincipalCard(props) {
-    const [productsList] = useState(products)
     const [search, setSearch] = useState("")
     const [minPrice, setMinPrice] = useState(-Infinity)
     const [maxPrice, setMaxPrice] = useState(Infinity)
-    const [order, setOrder] = useState("asc")
-    const [quantifyProducts, setQuantifyProducts] = useState(0)
+    const [order, setOrder] = useState("")
 
-    // const addQuantity = () => {
-    //     quantifyProducts
-    // }
-
-
+    const {addToCart}=props
+    
+    
     return (
         <>
+            
             <Buying>
-                <h2>Como comprar?</h2>
-                <p>1º: Escolha sua estampa</p>
-                <p>2º: Adicione ao carrinho</p>
-                <p>3º: Escolha a cor e o  tamanho da sua camiseta</p>
+                <h3>Como comprar sua camiseta personalizada?</h3>
+                <span>1º: Escolha sua estampa 2º: Adicione ao carrinho 3º: Escolha a cor e o  tamanho da sua camiseta</span>
             </Buying>
 
             <Filters
@@ -39,8 +32,6 @@ export function PrincipalCard(props) {
                 order={order}
                 setOrder={setOrder}
             />
-            
-            <Quantify className="quantify" >Quantidade de produtos: {quantifyProducts}</Quantify>
 
             <MainCard>
 
@@ -86,12 +77,11 @@ export function PrincipalCard(props) {
                             }
                         })
                         .map((product) => {
-                            return <ProductsCard key={product.id} product={product} />
+                            return <ProductsCard key={product.id} product={product} addToCart={addToCart} />
                         })
                     }
                 </section>
-                <ShoppingCart />
-
+                
             </MainCard>
         </>
     )

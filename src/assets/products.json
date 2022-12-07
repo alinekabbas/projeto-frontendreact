@@ -8,7 +8,7 @@
 
     {
         "id": "02",
-        "name": "T-shirt Não acredito em humanos - Alien",
+        "name": "T-shirt Não acredito em humanos",
         "price": 59.90,
         "feature": "humanos"
     },
@@ -43,7 +43,7 @@
 
     {
         "id": "07",
-        "name": "T-shirt Não acredito em humanos - Ovni",
+        "name": "T-shirt Não acredito em humanos - Alien",
         "price": 39.90,
         "feature": "humanos2"
     },
@@ -51,14 +51,14 @@
     {
         "id": "08",
         "name": "T-shirt Ao infinito e além",
-        "price": 45.90,
+        "price": 49.90,
         "feature": "infinito"
     },
 
     {
         "id": "09",
         "name": "T-shirt Eu preciso de mais espaço",
-        "price": 45.90,
+        "price": 49.90,
         "feature": "espaco"
     },
 
