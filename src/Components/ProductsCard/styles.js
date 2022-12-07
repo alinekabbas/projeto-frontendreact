@@ -12,6 +12,7 @@ export const Card = styled.div`
     background-color: #012f6d;
     background-image: url(${imageCards});
     color: white;
+    cursor: pointer;
     font-weight: 300;
     transition-duration: 400ms;
     transition-timing-function: ease;
@@ -36,6 +37,11 @@ export const Card = styled.div`
     }
 
     button{
+        width: 150px;
         cursor: pointer;
+        background-color: #012f6d;
+        border: 1px solid orange;
+        color: white;
+        border-radius: 5px;
     }
 `

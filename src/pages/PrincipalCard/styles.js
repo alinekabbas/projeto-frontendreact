@@ -1,19 +1,32 @@
 import styled from "styled-components";
 import background from "../../assets/background.png"
 
+export const Buying = styled.div`
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ee9d2b;
+    min-width: 24vw;
+    max-width: 100vw;
+    height: 15vh;
+    gap: 16px;
+    padding: 4px;
+    font-size: 0.8750rem ;
+`
 
 export const MainCard = styled.main`
-width: 100%;
-min-height: 100vh;
-height: 100%;
-padding: 40px 0;
-display: flex;
-justify-content: center;
-//align-items: center;
-background-color: black;
-background-image: url(${background});
+    min-width: 24vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-image: url(${background});
 
-.products-card-principal{
+    .products-card-principal{
     width: 90%;
     height: 90%;
     display: grid;
@@ -23,14 +36,3 @@ background-image: url(${background});
 }
 `
 
-export const Buying = styled.div`
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blueviolet;
-    width: 100%;
-    height: 10vh;
-    gap: 16px;
-    font-size: 20px;
-`

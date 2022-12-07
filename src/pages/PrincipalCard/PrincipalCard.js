@@ -9,7 +9,7 @@ export function PrincipalCard(props) {
     const [search, setSearch] = useState("")
     const [minPrice, setMinPrice] = useState(-Infinity)
     const [maxPrice, setMaxPrice] = useState(Infinity)
-    const [order, setOrder] = useState("asc")
+    const [order, setOrder] = useState("")
 
     const {addToCart}=props
     
@@ -18,11 +18,8 @@ export function PrincipalCard(props) {
         <>
             
             <Buying>
-                <h2></h2>
-                <h3>Como comprar?</h3>
-                <p>1º: Escolha sua estampa</p>
-                <p>2º: Adicione ao carrinho</p>
-                <p>3º: Escolha a cor e o  tamanho da sua camiseta</p>
+                <h3>Como comprar sua camiseta personalizada?</h3>
+                <span>1º: Escolha sua estampa 2º: Adicione ao carrinho 3º: Escolha a cor e o  tamanho da sua camiseta</span>
             </Buying>
 
             <Filters

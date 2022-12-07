@@ -8,7 +8,7 @@
 
     {
         "id": "02",
-        "name": "T-shirt Não acredito em humanos - Alien",
+        "name": "T-shirt Não acredito em humanos",
         "price": 59.90,
         "feature": "humanos"
     },
@@ -43,7 +43,7 @@
 
     {
         "id": "07",
-        "name": "T-shirt Não acredito em humanos - Ovni",
+        "name": "T-shirt Não acredito em humanos - Alien",
         "price": 39.90,
         "feature": "humanos2"
     },

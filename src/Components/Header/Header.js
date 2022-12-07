@@ -10,10 +10,15 @@ export function Header(props) {
 
   return (
     <HeaderContainer>
-      
+
       <h1 onClick={goToPrincipalCard}>Space Store</h1>
-      <button onClick={goToShoppingCart}><img src={cartIcon} alt="Icone" /></button>
-      
+      <button onClick={goToShoppingCart}><img src={cartIcon} alt="Icone" />
+        {
+          cartItens > 0
+          && <span>{cartItens}</span>
+        }
+        </button>
+
     </HeaderContainer>
   )
 }

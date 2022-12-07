@@ -1,34 +1,5 @@
 import styled from "styled-components";
 import imageCards from "../../assets/backgroundCards2.png"
-import imageCart from "../../assets/backgroundShoppingCart.png"
-
-export const CartContainer = styled.section`
-    width: 500px;
-    height: 480px;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    background-image: url(${imageCart});
-    color: black;
-
-    .options{
-        width: 500px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        .quantity{
-           width: 130px;
-           display: flex;
-           justify-content: space-between;
-        }
-               
-    }
-`
-
 
 export const ProductCart = styled.div`
     width: 240px;
@@ -41,21 +12,58 @@ export const ProductCart = styled.div`
     background-color: #012f6d;
     background-image: url(${imageCards});
     color: white;
-    font-weight: 300;
+    font-weight: 500;
+    padding: 12px 8px;
+    text-align: center;
 
     img{
         width: 80%;
         height: 70%;
         border-radius: 10%;
+    }   
+
+    select{
+        color: orange;
+        background-color: transparent;
+
+        option{
+            color: black;
+        }
     }
 
-    span{
-        font-weight: 500;
-        text-align: center;
+    .options{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         
+        .quantity{
+           width: 60px;
+           display: flex;
+           justify-content: space-between;
+           color: white;
+
+           button{
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            color: white;
+            background-color: #012f6d;
+            border: 1px solid orange;
+            border-radius: 50%;
+        }  
+    }
     }
 
-    button{
+    .deleteButton{
         cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+
+        :hover{
+            background-color: orange;
+        }
     }
 `
