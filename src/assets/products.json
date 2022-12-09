@@ -74,6 +74,12 @@
         "name": "T-shirt Cansei, me leva",
         "price": 49.90,
         "feature": "cansei"
+    },
+    {
+        "id": "12",
+        "name": "T-shirt Cansadito",
+        "price": 62.90,
+        "feature": "cansadito"
     }
     
 ]

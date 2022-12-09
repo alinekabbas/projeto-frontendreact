@@ -21,7 +21,21 @@ export const TotalPrice = styled.div`
   background-image: url(${background});
   color: white;
   padding: 20px;
-  gap: 8px
+  gap: 8px;
+
+  .totalPriceButtons{
+    display: flex;
+    gap: 16px;
+
+    button{
+    color: orange;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 152px;
+    height: 32px;
+  }
+  } 
+  
 `
 
 export const CartContainer = styled.main`

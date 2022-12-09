@@ -13,7 +13,7 @@ export const FiltersContainer = styled.div`
     background-image: url(${background});
 
     input{
-        height: 5vh;
+        height: 32px;
         width: 130px;
         border: 1px solid white;
         background-image: url(${background});
@@ -26,7 +26,7 @@ export const FiltersContainer = styled.div`
     }
     
     select{
-        height: 5vh;
+        height: 32px;
         border: 1px solid white;
         background-image: url(${background});
         color: orange;
@@ -40,7 +40,7 @@ export const FiltersContainer = styled.div`
 export const PriceMinMax = styled.div`
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 32px;
     
     label{
         margin-right: 4px;
@@ -49,8 +49,8 @@ export const PriceMinMax = styled.div`
 `
 
 export const Search = styled.div`
-    width: 30vw;
-    height: 5vh;
+    width: 400px;
+    height: 32px;
     display: flex;
     justify-content: center;
 
