@@ -32,7 +32,7 @@ export const MainCard = styled.main`
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 28px;
+    gap: 40px;
 }
 `
 

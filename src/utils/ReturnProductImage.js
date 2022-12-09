@@ -8,7 +8,9 @@ import humanos2 from "../assets/productsImages/tshirtNaoAcreditoEmHumanos2.png";
 import infinito from "../assets/productsImages/tshirtAoInfinitoAlem.png";
 import espaco from "../assets/productsImages/tshirtPrecisoDeMaisEspaço.png";
 import foguete from "../assets/productsImages/tshirtFogueteNaoTemRe.png";
-import cansei from "../assets/productsImages/tshirtCanseiMeLeva.png"
+import cansei from "../assets/productsImages/tshirtCanseiMeLeva.png";
+import cansadito from "../assets/productsImages/tshirtCansadito.png"
+
 
 export const getFeature = (feature) => {
     switch (feature) {
@@ -34,6 +36,8 @@ export const getFeature = (feature) => {
             return foguete;
         case "cansei":
             return cansei;
+        case "cansadito":
+            return cansadito;
         default:
             return "imagem produto";
     }

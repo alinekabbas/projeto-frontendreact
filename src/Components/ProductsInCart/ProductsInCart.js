@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ProductCart } from "./styles";
 import deleteIcon from "../../assets/deleteItem.svg"
 
+
 export function ProductsInCart(props) {
     const {
         product,
@@ -47,7 +48,7 @@ export function ProductsInCart(props) {
                     </div>
                 </div>
                 <div className="quantity">
-                    <button onClick={() => decreaseInCart(product)} >-</button>
+                    {product.quantity > 1 ? <button onClick={() => decreaseInCart(product)} >-</button> : <button disabled={true}>-</button>}
                     <p>{product.quantity}</p>
                     <button onClick={() => increaseInCart(product)} >+</button>
 

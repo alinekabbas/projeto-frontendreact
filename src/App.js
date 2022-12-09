@@ -25,10 +25,9 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    const getSaveCart = localStorage.getItem("cart")
+    const getSaveCart = JSON.parse(localStorage.getItem("cart"))
     if (getSaveCart !== null) {
-      const saveCart = JSON.parse(getSaveCart)
-      setCart(saveCart)
+      setCart(getSaveCart)
     }
   }, [])
 
@@ -57,6 +56,7 @@ function App() {
     )
 
     newCart.splice(productToRemove, 1)
+    window.localStorage.removeItem("cart")
     setCart(newCart)
   }
 
@@ -97,6 +97,8 @@ function App() {
           removeToCart={removeToCart}
           increaseInCart={increaseInCart}
           decreaseInCart={decreaseInCart}
+          goToPrincipalCard={goToPrincipalCard}
+          cartItens={cart.length}
         />;
       default:
         return <h1>Página não encontrada</h1>

@@ -5,15 +5,16 @@ import { ProductsInCart } from "../../Components/ProductsInCart/ProductsInCart";
 export function ShoppingCart(props) {
     const {
         cart,
+        cartItens,
         removeToCart,
         increaseInCart,
-        decreaseInCart
+        decreaseInCart,
+        goToPrincipalCard
     } = props
 
     let totalPrice = 0
     cart.map((item) => (totalPrice = totalPrice + item.price * item.quantity))
 
-   
     return (
         <>
             <Buying>
@@ -24,9 +25,13 @@ export function ShoppingCart(props) {
             <TotalPrice>
                 <h2>Meu Carrinho</h2>
 
-                <span>Total: R$ {totalPrice.toFixed(2)} </span>                
+                <span>Total: R$ {totalPrice.toFixed(2)} </span>
+                <div className="totalPriceButtons">
+                    {cartItens >= 1 && <button onClick={goToPrincipalCard} >Continuar comprando</button> } 
+                    {cartItens >= 1 && <button onClick={()=>window.alert("Compra finalizada com sucesso!")} >Finalizar compra</button>}
+                </div>
             </TotalPrice>
-            
+
             <CartContainer>
 
                 <section className="products-shopping-cart">
