@@ -3,7 +3,7 @@
 Este projeto tem por objetivo o desenvolvimento de um e-commerce. O tema proposto foi itens espaciais.
 O item que escolhi foi uma loja de personalização de camisetas, onde o usuário (cliente), pode escolher a estampa desejada, adicioná-la ao carrinho, escolher a cor e o tamanho da sua camiseta e finalizar sua compra.
 
-Como requisito o projeto consistiu em três partes: Home, Carrinho e Filtros:
+Como requisito, o projeto consistiu em três partes: Home, Carrinho e Filtros:
 
 1. Home
     - Mostrando todos os produtos
@@ -30,7 +30,7 @@ O projeto foi executado através da utilização dos fundamentos do React, como:
 - Renderização condicional
 - localStorage
 
-Como implementação extra, foi implementado 
+Como funcionalidade extra, foi implementado:
 
 - Link na logo da loja - caso o carrinho esteja vazio, este é o caminho para voltar à Home Page.
 
