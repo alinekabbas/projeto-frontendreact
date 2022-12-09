@@ -38,4 +38,6 @@ Como funcionalidade extra, foi implementado:
 Continuar comprando - volta para a home page
 Finalizar compra - ao clicar o mesmo avisa ao cliente que sua compra foi finalizada através do alert.
 
+Link do site: https://space-store-ak.surge.sh/
+
 
